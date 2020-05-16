@@ -69,3 +69,4 @@ SEE HELP TO GET A HINT FOR USAGE OF all_to_one_file AND resize_faktor
 ocr.run(all_to_one_file = True, resize_faktor = 2)
 print("DONE!\nThis took: {} seconds".format(time.time()-start))
 
+
