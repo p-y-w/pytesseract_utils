@@ -29,22 +29,26 @@ ocr2c = screenshotOCR_to_clipboard(r'...\tesseract.exe')
 result_as_line = ocr2c.ocr_to_oneline()
 
 print("Result oneline:", result_as_line)
+
 ------------------------------------------------
 
 result_as_rows = ocr2c.ocr_to_rows()
 
 print("Result rows:", result_as_rows)
+
 ------------------------------------------------
 
 result_as_cols = ocr2c.ocr_to_cols()
 
 print("Result cols:", result_as_cols)
+
 ------------------------------------------------
 
 
 result_as_df = ocr2c.ocr_table_to_table()
 
 print("result_as_df:", result_as_df)
+
 ------------------------------------------------
 
 COPY THE RESULT TO CLIPBOARD
@@ -58,8 +62,6 @@ cv2.destroyAllWindows()
 TABLE TO EXCEL-FILE
 ------------------------------------------------
 start =  time.time()
-
-Set your options here
 
 WHERE ARE THE FILES
 
@@ -87,7 +89,6 @@ TEXT TO TEXTFILE
 ------------------------------------------------
 start =  time.time()
 
-Set your options here
 WHERE ARE THE FILES
 input_dir = "input"
 
