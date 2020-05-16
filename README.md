@@ -16,42 +16,47 @@ Install requirements.txt
 REPLACE >>r'...\tesseract.exe'<< with your path to the tesseract.exe
 
 # OCR FROM SCREENSHOT TO CLIPBOARD
-
+------------------------------------------------
 draw a border around table-content without border
 
 prep = prepare_draw_table(search_vertical = False)
 
 output_image = prep.run("input_image.jpg") 
 
+------------------------------------------------
 ocr2c = screenshotOCR_to_clipboard(r'...\tesseract.exe')
 
 result_as_line = ocr2c.ocr_to_oneline()
 
 print("Result oneline:", result_as_line)
+------------------------------------------------
 
 result_as_rows = ocr2c.ocr_to_rows()
 
 print("Result rows:", result_as_rows)
-
+------------------------------------------------
 
 result_as_cols = ocr2c.ocr_to_cols()
 
 print("Result cols:", result_as_cols)
-
-ocr2c.copy_to_clipboard()
+------------------------------------------------
 
 
 result_as_df = ocr2c.ocr_table_to_table()
 
 print("result_as_df:", result_as_df)
+------------------------------------------------
 
-
+COPY THE RESULT TO CLIPBOARD
 ocr2c.copy_to_clipboard()
 
 cv2.destroyAllWindows()
 
 
 # OCR FROM FILES
+------------------------------------------------
+TABLE TO EXCEL-FILE
+------------------------------------------------
 start =  time.time()
 
 Set your options here
@@ -77,12 +82,13 @@ ocr.run()
 print("DONE!\nThis took: {} seconds".format(time.time()-start))
 
 
+------------------------------------------------
+TEXT TO TEXTFILE
+------------------------------------------------
 start =  time.time()
 
 Set your options here
-
 WHERE ARE THE FILES
-
 input_dir = "input"
 
 WHERE TO STORE THE RESULTS
