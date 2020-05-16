@@ -9,7 +9,8 @@
 
 # BEFORE YOU START:
 Install tesseract from https://github.com/UB-Mannheim/tesseract/wiki
-Install requirements
+
+Install requirements.txt
 
 # USAGE:
 REPLACE >>r'...\tesseract.exe'<< with your path to the tesseract.exe
